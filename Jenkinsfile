@@ -22,12 +22,13 @@ node () {
             } else { 
                 bat "mvn gatling:test" 
             } 
-        }
+        } 
+    }
+
      post {
             always {
                     gatlingArchive()
             }
-        } 
     }
 }
 }
