@@ -1,4 +1,4 @@
-package org.baeldung
+package socap.demo
 
 import scala.concurrent.duration._
 
