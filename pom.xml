@@ -92,7 +92,8 @@
                 <artifactId>gatling-maven-plugin</artifactId>
                 <version>${gatling-maven-plugin.version}</version>
                 <configuration>
-                    <simulationClass>org.baeldung.RecordedSimulation</simulationClass>
+                    <simulationClass>socap.demo.RecordedSimulation</simulationClass>
+                    <simulationClass>socap.demo.advanced.AdvancedSimulationStep03</simulationClass>
                 </configuration>
             </plugin>
         </plugins>
