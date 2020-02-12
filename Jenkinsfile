@@ -23,6 +23,7 @@ node () {
                 bat "mvn gatling:test" 
             } 
         } 
+    gatlingArchive()
     }
   }
 }
