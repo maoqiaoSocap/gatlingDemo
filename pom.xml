@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>socap.demo</groupId>
     <artifactId>gatling</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>gatling</name>
-
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -32,7 +29,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
     <dependencies>
         <dependency>
             <groupId>io.gatling.highcharts</groupId>
@@ -51,7 +47,6 @@
             <artifactId>scala-library</artifactId>
         </dependency>
     </dependencies>
-
     <build>
         <testSourceDirectory>src/test/scala</testSourceDirectory>
         <pluginManagement>
@@ -92,25 +87,31 @@
                 <artifactId>gatling-maven-plugin</artifactId>
                 <version>${gatling-maven-plugin.version}</version>
                 <configuration>
-                  <!--   <simulationClass>socap.demo.RecordedSimulation</simulationClass>  -->
-                  <!-- <simulationClass>socap.demo.advanced.AdvancedSimulationStep01</simulationClass> -->
-                  <!-- <simulationClass>socap.demo.advanced.AdvancedSimulationStep02</simulationClass> -->
-                  <simulationClass>socap.demo.advanced.AdvancedSimulationStep03</simulationClass>
-                  <!-- <simulationClass>socap.demo.advanced.AdvancedSimulationStep04</simulationClass> -->
-                  <!-- <simulationClass>socap.demo.advanced.AdvancedSimulationStep05</simulationClass> -->
+                    <!--   <simulationClass>socap.demo.RecordedSimulation</simulationClass>  -->
+                    <!-- <simulationClass>socap.demo.advanced.AdvancedSimulationStep01</simulationClass> -->
+                    <!-- <simulationClass>socap.demo.advanced.AdvancedSimulationStep02</simulationClass> -->
+                    <!-- <simulationClass>socap.demo.advanced.AdvancedSimulationStep03</simulationClass> -->
+                    <!-- <simulationClass>socap.demo.advanced.AdvancedSimulationStep04</simulationClass> -->
+                    <simulationClass>socap.demo.advanced.AdvancedSimulationStep05</simulationClass>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <encoding>UTF-8</encoding>
-        <scala.version>2.12.6</scala.version> <!--2.11.12 --> <!--2.12.6 -->
-        <gatling.version>3.3.1</gatling.version> <!--2.2.5 --> <!--2.3.1 -->
-        <scala-maven-plugin.version>4.3.0</scala-maven-plugin.version> <!--3.2.2 --> <!--3.3.2 -->
-        <gatling-maven-plugin.version>3.0.4</gatling-maven-plugin.version> <!--2.2.1 --> <!--2.2.4 -->
+        <scala.version>2.12.6</scala.version>
+        <!--2.11.12 -->
+        <!--2.12.6 -->
+        <gatling.version>3.3.1</gatling.version>
+        <!--2.2.5 -->
+        <!--2.3.1 -->
+        <scala-maven-plugin.version>4.3.0</scala-maven-plugin.version>
+        <!--3.2.2 -->
+        <!--3.3.2 -->
+        <gatling-maven-plugin.version>3.0.4</gatling-maven-plugin.version>
+        <!--2.2.1 -->
+        <!--2.2.4 -->
     </properties>
-
 </project>
