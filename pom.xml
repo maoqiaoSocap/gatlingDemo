@@ -87,12 +87,12 @@
                 <artifactId>gatling-maven-plugin</artifactId>
                 <version>${gatling-maven-plugin.version}</version>
                 <configuration>
-                    <!--   <simulationClass>socap.demo.RecordedSimulation</simulationClass>  -->
+                    <simulationClass>socap.demo.RecordedSimulation</simulationClass>
                     <!-- <simulationClass>socap.demo.advanced.AdvancedSimulationStep01</simulationClass> -->
                     <!-- <simulationClass>socap.demo.advanced.AdvancedSimulationStep02</simulationClass> -->
                     <!-- <simulationClass>socap.demo.advanced.AdvancedSimulationStep03</simulationClass> -->
                     <!-- <simulationClass>socap.demo.advanced.AdvancedSimulationStep04</simulationClass> -->
-                    <simulationClass>socap.demo.advanced.AdvancedSimulationStep05</simulationClass>
+                    <!-- <simulationClass>socap.demo.advanced.AdvancedSimulationStep05</simulationClass> -->
                 </configuration>
             </plugin>
         </plugins>
